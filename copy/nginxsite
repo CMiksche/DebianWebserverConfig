@@ -5,9 +5,19 @@ server {
         server_name yourdomain.com;
 
         root /var/www/html/yourdomain.com;
-        index index.html;
+        index index.html index.php;
 
         location / {
                 try_files $uri $uri/ =404;
         }
+
+        location ~ \.php$ {
+                include snippets/fastcgi-php.conf;
+
+                # With php5-cgi alone:
+                #fastcgi_pass 127.0.0.1:9000;
+                # With php5-fpm:
+                fastcgi_pass unix:/var/run/php5-fpm.sock;
+        }
+
 }
