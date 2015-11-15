@@ -14,3 +14,9 @@ defaultuser=""
 defaultpass=""
 # Name of your Website
 website=""
+# Database
+# Options: mysql
+database="mysql"
+# FTP-Server
+# Options: vsftpd
+ftpserver="vsftpd"
