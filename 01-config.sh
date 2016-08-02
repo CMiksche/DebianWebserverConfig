@@ -4,7 +4,7 @@
 # License: GNU General Public License
 #
 # Contact:
-# > http://cdm.webpage4.me
+# > http://christoph.miksche.org
 # > Twitter: CMiksche
 # > GitHub: CMiksche
 #
